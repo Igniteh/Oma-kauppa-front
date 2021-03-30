@@ -43,9 +43,9 @@ function Navbari () {
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <ol>
-                  {message.map(tuoteryhma => (
-                      <li key={tuoteryhma.id}>
-                        <a href="http://www.google.com">{tuoteryhma.tuotenimi}</a>
+                  {message.map(tuote => (
+                      <li key={tuote.tuotenro}>
+                        <a href="http://www.google.com">{tuote.tuotenimi}</a>
                         </li>
                   ))}
               </ol>
