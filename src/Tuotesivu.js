@@ -46,7 +46,7 @@ function Tuotesivu() {
     <div className="booktype_and_cart_content col-md-12">
 
             <div className="kirjatyyppi_placement col-md-6"> kirjatyyppi</div>
-            <div className="cart_placement col-md-6 float-right"> ostoskärry</div>
+            <div className="cart_placement col-md-6 float-right"><button type="button" class="btn btn-primary">Lisää ostoskoriin</button></div>
 
     </div>
     {/* booktype_and_cart_content stoppi */}
