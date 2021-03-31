@@ -9,11 +9,9 @@ function Tuotesivu() {
 
     <div className="row">
 
-                        <div className="img_and_about col-12">
-
+                        <div className=" col-12">
 
         <img className="bookplacement col-md-5 img-fluid" src={kirja} />
-   
             
                     <div className="about_book_content float-right col-md-6">
 
