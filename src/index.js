@@ -7,6 +7,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import Popper from 'popper.js';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee, faBars} from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faCheckSquare, faCoffee, faBars)
 
 
 ReactDOM.render(
