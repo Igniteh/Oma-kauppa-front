@@ -5,10 +5,11 @@ function Tuotesivu() {
   return (
     <div className="tuotesivu_content col-12">
       <div className="row">
-        <div className=" col-12">
-          <img className="bookplacement col-md-5 img-fluid" src={kirja} />
-          <div className="about_book_content float-right col-md-6">
-            <div className="book_name col-md-6">
+        <div className=" col-6">
+          <img className="bookplacement img-fluid" src={kirja} />
+          </div>
+          <div className="about_book_content col-6 float-right">
+            <div className="book_name col-6">
               <h3>$Name</h3>
             </div>
 
@@ -20,7 +21,7 @@ function Tuotesivu() {
               </ul>
             </div>
 
-            <div className="availability_and_price_contents col-md-12">
+            <div className="availability_and_price_contents col-12">
               <div className="available col-md-6">$kappalemäärä</div>
               <div className="price col-md-6">$hinta</div>
             </div>
@@ -29,14 +30,13 @@ function Tuotesivu() {
           {/* img_and_about stoppi */}
         </div>{" "}
         {/* about_book_content stoppi */}
-        <div className="booktype_and_cart_content col-md-12">
+        <div className="booktype_and_cart_content col-12">
           <div className="kirjatyyppi_placement col-md-6"> kirjatyyppi</div>
           <div className="cart_placement col-md-6 float-right">
-            <button type="button" class="btn btn-primary">
+            <button type="button" class="btn btn-dark">
               Lisää ostoskoriin
             </button>
           </div>
-        </div>
         {/* booktype_and_cart_content stoppi */}
       </div>{" "}
       {/*rowi stoppi */}
