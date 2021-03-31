@@ -10,11 +10,13 @@ const URL = "http://localhost/omadb/products/searchproducts.php";
 function App() {
 
   return (
-    <div className="container">
     <div className="bg-color">
+    <div className="container">
+    <div className="page-color">
       <Navbari />
         <Tuotesivu />
           <Footeri />
+    </div>
     </div>
     </div>
   );
