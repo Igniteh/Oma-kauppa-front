@@ -3,13 +3,13 @@ import "./styles/general.css";
 
 function Tuotesivu() {
   return (
-    <div className="tuotesivu_content col-12">
+    <div className="tuotesivu_content col-md-12">
       <div className="row">
-        <div className=" col-6">
+        <div className=" col-md-6 col-xs-3">
           <img className="bookplacement img-fluid" src={kirja} />
           </div>
-          <div className="about_book_content col-6 float-right">
-            <div className="book_name col-6">
+          <div className="about_book_content col-md-6 float-right">
+            <div className="book_name col-md-6">
               <h3>$Name</h3>
             </div>
 
@@ -21,7 +21,7 @@ function Tuotesivu() {
               </ul>
             </div>
 
-            <div className="availability_and_price_contents col-12">
+            <div className="availability_and_price_contents col-md-6">
               <div className="available col-md-6">$kappalemäärä</div>
               <div className="price col-md-6">$hinta</div>
             </div>
