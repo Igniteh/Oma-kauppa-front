@@ -23,8 +23,13 @@ img{
 }
 
 .funfacts {
-    border: solid 3px black;
-    background-color: blanchedalmond;
+    border: solid 1px gray;
     padding-top: 20px;
     padding-right: 20px;
+} .hinta {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+} .tuotekuvaus {
+    border: solid 1px gray;
 }
