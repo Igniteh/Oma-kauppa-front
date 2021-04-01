@@ -6,24 +6,24 @@ function Tuotesivu() {
   return (
     <div className="tuotesivu_content col-md-12">
       <div className="row">
-        <div className=" col-md-6 col-sm-12">
+        <div className="col-md-6">
           <img className="img-fluid" src={kirja} />
           </div>
-          <div className="about_book_content col-md-6 float-right">
-            <div className="book_name col-md-6 text-center">
+          <div className="about_book_content col-md-6">
+            <div className="book_name col-md-6 col-sm-12 text-center">
               <h3>Kirjan nimi tänne</h3>
             </div>
 
-            <div className="funfacts col-md-6">
+            <div className="funfacts col-md-6 col-sm-12 text-center">
                 Kovakantinen
-                <div className="hinta">
+                <div className="hinta text-center">
                     25.00€
                 </div>
                 <hr>
                 </hr>
                   <div className="row m-3">
                   <input placeholder="1" min="1" name="tekstikenttä" type="number" class="form-control col-md-4 mr-3" id="kpl_maara" />
-                    <button type="button" class="btn btn-dark">
+                    <button type="button" class="btn btn-secondary">
                     Lisää koriin
                 </button>
                 </div>
@@ -33,7 +33,7 @@ function Tuotesivu() {
             </div>
 
                 <div className="col-12">
-                <div class="dropdown m-4">
+                <div class="dropdown m-4 text-center">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Kirjatyyppi
                     </button>
@@ -44,7 +44,7 @@ function Tuotesivu() {
                     </div>
                 </div>
 
-            <div className="cart_placement col-md-6">
+            <div className="col-md-6 col-sm-2">
             </div>
             {/* availability_and_price_contents stoppi */}
           </div>{" "}
