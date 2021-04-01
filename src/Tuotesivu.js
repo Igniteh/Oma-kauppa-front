@@ -33,11 +33,9 @@ function Tuotesivu() {
             </div>
 
                 <div className="col-12">
-                    <div className="m-5 col-md-6"> kirjatyyppi
-                </div>
                 <div class="dropdown m-4">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown button
+                        Kirjatyyppi
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Pokkari</a>
