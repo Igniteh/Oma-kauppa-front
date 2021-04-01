@@ -1,5 +1,6 @@
 import kirja from "./img/lol.png";
 import "./styles/general.css";
+import $ from 'jquery';
 
 
 function Tuotesivu() {
@@ -7,7 +8,7 @@ function Tuotesivu() {
     <div className="tuotesivu_content col-md-12">
       <div className="row">
         <div className=" col-md-6 col-sm-12">
-          <img className="img-fluid" src={kirja} />
+          <img className="img-fluid mt-3" src={kirja} style={{width: 430, height:620}} />
           </div>
           <div className="about_book_content col-md-6 float-right">
             <div className="book_name col-md-6 text-center">
@@ -57,17 +58,28 @@ function Tuotesivu() {
         {/* booktype_and_cart_content stoppi */}
       {/*rowi stoppi */}
       <div className="my-3 tuotekuvaus">
-      <div className="m-3">
-      <h3>Tuotekuvaus</h3>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-       </div>
+        <div className="m-3">
+        <h3>Tuotekuvaus</h3>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
       </div>
-      
+      <div class="container">
+        <h3>Arvostelut</h3>
+          <form>
+          <div class="row m-3">
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Kirjoita arvostelu.."></textarea>
+            </div>
+          </div>
+          <div class="row ml-3">
+            <input type="submit" value="Submit" />
+          </div>
+          </form>
+        </div>      
     </div> // tuotesivu_content stoppi
-    
   );
 }
 export default Tuotesivu;
