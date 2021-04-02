@@ -25,9 +25,9 @@ function Tuotesivu() {
                 </div>
                 <hr></hr>
                 {/* add_to_cart alku */}
-                  <div className="add_to_cart row col-md-12">
-                  <input placeholder="1" min="1" name="tekstikenttä" type="number" class="form-control col-md-2 mr-3" id="kpl_maara" />
-                    <button type="button" class="btn btn-secondary">
+                  <div className="add_to_cart row col-12">
+                  <input placeholder="1" min="1" name="tekstikenttä" type="number" className="form-control col-lg-4 col-md-3 col-sm-3" id="kpl_maara" />
+                    <button type="button" className="btn btn-secondary ml-3 col-lg-7 col-sm-8">
                     Lisää koriin
                 </button>
                   </div>
@@ -36,14 +36,14 @@ function Tuotesivu() {
                     Saatavilla: 3 kpl
                 </div>
                 {/* booktype alku */}
-                <div class="booktype dropdown m-4 text-center">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div className="booktype dropdown m-4 text-center">
+                    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Kirjatyyppi
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Pokkari</a>
-                        <a class="dropdown-item" href="#">Kovakantinen</a>
-                        <a class="dropdown-item" href="#">E-kirja</a>
+                    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a className="dropdown-item" href="#">Pokkari</a>
+                        <a className="dropdown-item" href="#">Kovakantinen</a>
+                        <a className="dropdown-item" href="#">E-kirja</a>
                     </div>
                 </div>
                 {/* booktype stoppi */}
@@ -65,16 +65,16 @@ function Tuotesivu() {
       </div>
       {/* tuotekuvaus stoppi */}
       {/* review alku */}
-      <div class="review">
+      <div className="review">
         <h3>Arvostelut</h3>
           <form>
-          <div class="row m-3">
-            <div class="col-75">
+          <div className="row m-3">
+            <div className="col-75 col-12">
               <textarea id="subject" name="subject" placeholder="Kirjoita arvostelu.."></textarea>
             </div>
           </div>
-          <div class="row ml-3">
-            <input className="btn-secondary col-sm-12 col-md-6 col-lg-2 mr-3" type="submit" value="Submit" />
+          <div className="row ml-3">
+            <input className="btn-secondary col-sm-10 col-md-4 col-lg-2 mr-3" type="submit" value="Submit" />
           </div>
           </form>
         </div> 
