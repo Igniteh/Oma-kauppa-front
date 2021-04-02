@@ -16,6 +16,7 @@ function Tuotesivu() {
           <div className="about_book_content col-md-6">
             <div className="book_name col-md-12 col-sm-12 text-center">
               <h3>Kirjan nimi tänne</h3>
+              <p>Kirjailijan nimi</p>
             </div>
             {/* funfacts alku */}
             <div className="funfacts col-md-12 text-center">
