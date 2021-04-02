@@ -7,19 +7,16 @@ function Tuotesivu() {
   return (
     <div className="tuotesivu_content col-md-12">
       <div className="row">
-
         {/* picture alku */}
         <div className="picture col-md-6 col-sm-12">
           <img className="img-fluid mt-4 ml-md-2" src={kirja}/>
           </div>
           {/* picture stoppi */}
-
           {/* about_book_content */}
           <div className="about_book_content col-md-6">
             <div className="book_name col-md-12 col-sm-12 text-center">
               <h3>Kirjan nimi tänne</h3>
             </div>
-
             {/* funfacts alku */}
             <div className="funfacts col-md-12 text-center">
                 Kovakantinen
@@ -28,8 +25,8 @@ function Tuotesivu() {
                 </div>
                 <hr></hr>
                 {/* add_to_cart alku */}
-                  <div className="add_to_cart row m-3">
-                  <input placeholder="1" min="1" name="tekstikenttä" type="number" class="form-control col-md-2  mr-3" id="kpl_maara" />
+                  <div className="add_to_cart row col-md-12">
+                  <input placeholder="1" min="1" name="tekstikenttä" type="number" class="form-control col-md-2 mr-3" id="kpl_maara" />
                     <button type="button" class="btn btn-secondary">
                     Lisää koriin
                 </button>
@@ -54,6 +51,8 @@ function Tuotesivu() {
             {/* funfacts stoppi */}
           </div>
           {/* about_book_content stoppi */}
+      </div>
+      {/* rowi stoppi */}
       {/* tuotekuvaus alku */}
       <div className="my-3 tuotekuvaus">
         <div className="m-3">
@@ -66,7 +65,7 @@ function Tuotesivu() {
       </div>
       {/* tuotekuvaus stoppi */}
       {/* review alku */}
-      <div class="review container">
+      <div class="review">
         <h3>Arvostelut</h3>
           <form>
           <div class="row m-3">
@@ -75,13 +74,11 @@ function Tuotesivu() {
             </div>
           </div>
           <div class="row ml-3">
-            <input className="btn-secondary" type="submit" value="Submit" />
+            <input className="btn-secondary col-sm-12 col-md-6 col-lg-2 mr-3" type="submit" value="Submit" />
           </div>
           </form>
         </div> 
         {/* review stoppi */}
-        </div>
-        {/* rowi stoppi */}
     </div> 
     // tuotesivu_content stoppi
   );
