@@ -7,34 +7,39 @@ function Tuotesivu() {
   return (
     <div className="tuotesivu_content col-md-12">
       <div className="row">
-        <div className=" col-md-6 col-sm-12">
-          <img className="img-fluid mt-3" src={kirja} style={{width: 430, height:620}} />
+
+        {/* picture alku */}
+        <div className="picture col-md-6 col-sm-12">
+          <img className="img-fluid mt-4 ml-md-2" src={kirja}/>
           </div>
+          {/* picture stoppi */}
+
+          {/* about_book_content */}
           <div className="about_book_content col-md-6">
-            <div className="book_name col-md-6 col-sm-12 text-center">
+            <div className="book_name col-md-12 col-sm-12 text-center">
               <h3>Kirjan nimi tänne</h3>
             </div>
 
-            <div className="funfacts col-md-6 col-sm-12 text-center">
+            {/* funfacts alku */}
+            <div className="funfacts col-md-12 text-center">
                 Kovakantinen
                 <div className="hinta text-center">
                     25.00€
                 </div>
-                <hr>
-                </hr>
-                  <div className="row m-3">
-                  <input placeholder="1" min="1" name="tekstikenttä" type="number" class="form-control col-md-4 mr-3" id="kpl_maara" />
+                <hr></hr>
+                {/* add_to_cart alku */}
+                  <div className="add_to_cart row m-3">
+                  <input placeholder="1" min="1" name="tekstikenttä" type="number" class="form-control col-md-2  mr-3" id="kpl_maara" />
                     <button type="button" class="btn btn-secondary">
                     Lisää koriin
                 </button>
-                </div>
-                <div className="m-3">
+                  </div>
+                  {/* add_to_cart_stoppi */}
+                <div className="available m-3">
                     Saatavilla: 3 kpl
                 </div>
-            </div>
-
-                <div className="col-12">
-                <div class="dropdown m-4 text-center">
+                {/* booktype alku */}
+                <div class="booktype dropdown m-4 text-center">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Kirjatyyppi
                     </button>
@@ -44,17 +49,12 @@ function Tuotesivu() {
                         <a class="dropdown-item" href="#">E-kirja</a>
                     </div>
                 </div>
-
-            <div className="col-md-6 col-sm-2">
-            </div>
-            {/* availability_and_price_contents stoppi */}
-          </div>{" "}
-          {/* img_and_about stoppi */}
-        </div>{" "}
-        {/* about_book_content stoppi */}
-        </div>{" "}
-        {/* booktype_and_cart_content stoppi */}
-      {/*rowi stoppi */}
+                {/* booktype stoppi */}
+            </div> 
+            {/* funfacts stoppi */}
+          </div>
+          {/* about_book_content stoppi */}
+      {/* tuotekuvaus alku */}
       <div className="my-3 tuotekuvaus">
         <div className="m-3">
         <h3>Tuotekuvaus</h3>
@@ -64,7 +64,9 @@ function Tuotesivu() {
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         </div>
       </div>
-      <div class="container">
+      {/* tuotekuvaus stoppi */}
+      {/* review alku */}
+      <div class="review container">
         <h3>Arvostelut</h3>
           <form>
           <div class="row m-3">
@@ -73,11 +75,15 @@ function Tuotesivu() {
             </div>
           </div>
           <div class="row ml-3">
-            <input type="submit" value="Submit" />
+            <input className="btn-secondary" type="submit" value="Submit" />
           </div>
           </form>
-        </div>      
-    </div> // tuotesivu_content stoppi
+        </div> 
+        {/* review stoppi */}
+        </div>
+        {/* rowi stoppi */}
+    </div> 
+    // tuotesivu_content stoppi
   );
 }
 export default Tuotesivu;
