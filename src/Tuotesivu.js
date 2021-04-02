@@ -1,6 +1,14 @@
 import kirja from "./img/lol.png";
 import "./styles/general.css";
 import $ from 'jquery';
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+
+const kirjatyyppi = [
+  'Kovakantinen',
+  'Pokkari',
+  'E-Kirja'
+];
 
 
 function Tuotesivu() {
@@ -14,7 +22,7 @@ function Tuotesivu() {
           {/* picture stoppi */}
           {/* about_book_content */}
           <div className="about_book_content col-md-6">
-            <div className="book_name col-md-12 col-sm-12 text-center">
+            <div className="book_name col-md-12 col-sm-12  text-center">
               <h3>Kirjan nimi tänne</h3>
               <p>Kirjailijan nimi</p>
             </div>
@@ -38,14 +46,8 @@ function Tuotesivu() {
                 </div>
                 {/* booktype alku */}
                 <div className="booktype dropdown m-4 text-center">
-                    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Kirjatyyppi
-                    </button>
-                    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a className="dropdown-item" href="#">Pokkari</a>
-                        <a className="dropdown-item" href="#">Kovakantinen</a>
-                        <a className="dropdown-item" href="#">E-kirja</a>
-                    </div>
+                <Dropdown options={kirjatyyppi}
+                  placeholder="Valitse kirjan tyyppi" />
                 </div>
                 {/* booktype stoppi */}
             </div> 
