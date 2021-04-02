@@ -26,8 +26,8 @@ function Tuotesivu() {
                 <hr></hr>
                 {/* add_to_cart alku */}
                   <div className="add_to_cart row col-12">
-                  <input placeholder="1" min="1" name="tekstikenttä" type="number" className="form-control col-lg-4 col-md-3 col-sm-3" id="kpl_maara" />
-                    <button type="button" className="btn btn-secondary ml-3 col-lg-7 col-sm-8">
+                  {/* <input placeholder="1" min="1" name="tekstikenttä" type="number" className="form-control col-lg-4 col-md-3 col-sm-3" id="kpl_maara" /> */}
+                    <button type="button" className="btn btn-secondary ml-4 col-5">
                     Lisää koriin
                 </button>
                   </div>
@@ -69,12 +69,12 @@ function Tuotesivu() {
         <h3>Arvostelut</h3>
           <form>
           <div className="row m-3">
-            <div className="col-75 col-12">
+            <div className="col-12">
               <textarea id="subject" name="subject" placeholder="Kirjoita arvostelu.."></textarea>
             </div>
           </div>
           <div className="row ml-3">
-            <input className="btn-secondary col-sm-10 col-md-4 col-lg-2 mr-3" type="submit" value="Submit" />
+            <input className="btn-secondary mr-3" type="submit" value="Submit" />
           </div>
           </form>
         </div> 
